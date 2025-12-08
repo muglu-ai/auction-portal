@@ -1,9 +1,9 @@
 <?php
 // Database configuration
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'auction_portal');
+define('DB_USER', 'u623622947_auction');
+define('DB_PASS', 'j/9U6DSKT+5');
+define('DB_NAME', 'u623622947_auction');
 
 // Create database connection
 function getDBConnection() {

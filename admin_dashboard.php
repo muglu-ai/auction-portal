@@ -69,7 +69,7 @@ renderHeader('Admin Dashboard', true);
         <table>
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>ID</th> 
                     <th>Title</th>
                     <th>Base Price</th>
                     <th>Status</th>

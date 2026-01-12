@@ -1,11 +1,19 @@
 <?php
 // Database configuration
-define('DB_HOST', 'localhost');
-define('DB_USER', 'u623622947_auction');
-define('DB_PASS', 'j/9U6DSKT+5');
-define('DB_NAME', 'u623622947_auction');
-
+// define('DB_HOST', 'localhost');
 // Create database connection
+
+// Load Composer autoloader
+require_once __DIR__ . '/vendor/autoload.php';
+
+// GET The values from the .env file
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+define('DB_HOST', $_ENV['DB_HOST']);
+define('DB_USER', $_ENV['DB_USER']);
+define('DB_PASS', $_ENV['DB_PASS']);
+define('DB_NAME', $_ENV['DB_NAME']);
 function getDBConnection() {
     try {
         $pdo = new PDO(

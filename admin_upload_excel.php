@@ -106,7 +106,7 @@ renderHeader('Upload Excel', true);
     <div class="alert alert-info">
         <strong>CSV Format Required:</strong><br>
         Columns: item_title, item_description, base_price, min_increment, start_datetime (YYYY-MM-DD HH:MM:SS), end_datetime (YYYY-MM-DD HH:MM:SS)<br>
-        <a href="sample_auction_template.csv" download style="color: #2c5282; font-weight: bold;">Download Sample Template</a>
+        <a href="sample_auction_template.xlsx" download style="color: #2c5282; font-weight: bold;">Download Sample Template</a>
     </div>
     
     <?php if (empty($preview)): ?>
